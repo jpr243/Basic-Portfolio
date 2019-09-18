@@ -1,8 +1,19 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
 }
+
+.box {
+    background-color: #ffffff;
+    padding: 20px;
+    height: 100px;
+    width: 960px;
+    margin: 10px;
+    border: none;
+    box-sizing: border-box;
+    
+ }
 
 .box1 {
     background-color: #ffffff;
@@ -18,9 +29,10 @@
 
  .box2 {
     font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
     background-color: #ffffff;
     padding: 20px;
-    height: 1000px;
+    height: 680px;
     width: 960px;
     border-top: 10px solid #dddddd;
     border-bottom: 120px solid #dddddd;
@@ -34,7 +46,7 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
     padding: 20px;
-    height: 850px;
+    height: 900px;
     width: 960px;
     border-top: 10px solid #dddddd;
     border-bottom: 120px solid #dddddd;
@@ -52,6 +64,7 @@
 
  .left {
      float: left;
+     padding: 0px 10px 10px 0px;
  }
 
  ul {
@@ -65,6 +78,11 @@
 
 li {
     float: right;
+    border-right: 1px solid #777777;
+}
+
+li:first-child {
+    border-right: none;
 }
 
 li a {
@@ -82,8 +100,8 @@ li a:hover:not(.MyName) {
 
 .active {
     background-color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #ffff
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 
 h1, h3 {
@@ -94,6 +112,9 @@ h1, h3 {
 h2 {
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 60px;
+    border-bottom: 2px solid #cccccc;
 }
 
 p {
@@ -106,10 +127,10 @@ input[type=text], select {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
   
 input[type=submit] {
     width: 20%;
@@ -120,11 +141,11 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
 
 input[type=submit]:hover {
     background-color: white;
-  }
+}
 
 #message {
     width: 100%;
@@ -135,9 +156,28 @@ input[type=submit]:hover {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
-  }
+}
 
-footer {
+* {
+    box-sizing: border-box;
+}  
+
+.img-container {
+    float: left;
+    width: 50%;
+    padding: 10px 10px 5px 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     background-color: #666666;
     padding: 20px;
     height: 15px;
@@ -146,5 +186,5 @@ footer {
     box-sizing: border-box;
     text-align: center;
     margin: 10px;
-    border-top-color: #4aaaa5;  
+    border-top: 8px solid #4aaaa5;
 }
