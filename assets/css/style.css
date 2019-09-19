@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-size: 15px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   color: #777777;
   box-sizing: border-box;
@@ -10,8 +10,9 @@
 #relative {
   position: relative;
   padding: 10px;
+  left: 900px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-align: center;
   height: 60px;
   font-size: 20px;
@@ -27,6 +28,7 @@
   left: 170px;
   font-size: 20px;
   color: #ffffff;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .box {
@@ -34,7 +36,7 @@
   padding: 20px;
   height: 680px;
   width: 1340px;
-  border-top: 10px solid #dddddd;
+  border-top: 15px solid #dddddd;
   border-bottom: 120px solid #dddddd;
   border-left: 170px solid #dddddd;
   border-right: 170px solid #dddddd;
@@ -46,7 +48,7 @@
   padding: 20px;
   height: 900px;
   width: 1340px;
-  border-top: 10px solid #dddddd;
+  border-top: 15px solid #dddddd;
   border-bottom: 120px solid #dddddd;
   border-left: 170px solid #dddddd;
   border-right: 170px solid #dddddd;
@@ -66,12 +68,12 @@ ul {
 }
 
 li {
-  float: right;
-  border-left: 1px solid #dddddd;
+  float: left;
+  border-right: 1px solid #dddddd;
 }
 
 li:last-child {
-  border-left: none;
+  border-right: none;
 }
 
 li a {
@@ -142,6 +144,16 @@ input[type="submit"]:hover {
   float: left;
   width: 50%;
   padding: 10px 10px 5px 5px;
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+  background-color: #4aaaa5;
+  color: white;
+  padding: 5px;
 }
 
 .clearfix::after {
@@ -151,7 +163,7 @@ input[type="submit"]:hover {
 }
 
 .footer {
-  position: sticky;
+  position: fixed;
   left: 0;
   bottom: 0;
   background-color: #666666;
