@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="eng-us">
-  <head>
-    <meta charset="utf-8" />
 
-    <title>Janet Reid</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
 
-  <body>
-    <section>
-      <div id="absolute">
-        Janet Reid
-      </div>
+  <title>Janet Reid</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
 
-      <div id="relative">
-        <ul>
-          <li>
-            <a class="active" href="index.html" target="_blank"
-              ><strong>About</strong></a
-            >
-          </li>
-          <li>
-            <a href="portfolio.html" target="_blank"
-              ><strong>Portfolio</strong></a
-            >
-          </li>
-          <li>
-            <a href="Contact.html" target="_blank"><strong>Contact</strong></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="box">
-        <header>
-          <h2>Contact</h2>
-        </header>
-        <br />
-        <br />
-
-        <form action="/action_page">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name.." />
-
-          <label for="email">Email</label>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Your email.."
-          />
-
-          <label for="message">Message</label>
-          <input type="text" id="message" name="message" placeholder="" />
-
-          <input type="submit" value="Submit" />
-        </form>
-      </div>
-    </section>
-    <div class="footer">
-      <p>Copyright &copy;</p>
+<body>
+  <section>
+    <!--My Name-->
+    <div id="absolute">
+      Janet Reid
     </div>
-  </body>
+    <!--Top Navigation Pane-->
+    <div id="relative">
+      <ul>
+        <li>
+          <a class="active" href="index.html" target="_blank"><strong>About</strong></a>
+        </li>
+        <li>
+          <a href="portfolio.html" target="_blank"><strong>Portfolio</strong></a>
+        </li>
+        <li>
+          <a href="Contact.html" target="_blank"><strong>Contact</strong></a>
+        </li>
+      </ul>
+    </div>
+    <!--Header Container-->
+    <div class="box">
+      <header>
+        <h2>Contact</h2>
+      </header>
+      <!--Form-->
+      <div class="contact-container">
+        <form action="/action_page">
+          <div class="row">
+            <div class="boxes">
+              <label for="name">Name</label>
+            </div>
+            <div class="boxes">
+              <input type="text" id="name" name="name" placeholder="Your name.." />
+            </div>
+          </div>
+          <div class="row">
+            <div class="boxes">
+              <label for="email">Email</label>
+            </div>
+            <div class="boxes">
+              <input type="text" id="email" name="email" placeholder="Your email.." />
+            </div>
+          </div>
+          <div class="boxes">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="" style="height:150px">
+  </textarea>
+          </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit" />
+      </div>
+      </form>
+    </div>
+
+  </section>
+  <!--Footer-->
+  <div class="footer">
+    <p>Copyright &copy;</p>
+  </div>
+</body>
+
 </html>

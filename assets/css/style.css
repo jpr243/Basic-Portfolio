@@ -83,6 +83,7 @@ li a {
   text-decoration: none;
 }
 
+/* I created a color change when hovering over navigation bar */
 li a:hover {
   background-color: #dddddd;
 }
@@ -106,19 +107,26 @@ h2 {
 }
 
 input[type="text"],
-select {
+select,
+textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #cccccc;
   border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12x 0;
+  display: inline-block;
 }
 
 input[type="submit"] {
   width: 20%;
   background-color: #4aaaa5;
-  color: white;
+  color: #ffffff;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -127,17 +135,26 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: white;
+  background-color: #ffffff;
 }
 
-#message {
+.contact-container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.boxes {
+  float: left;
   width: 100%;
-  height: 150px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .img-container {
@@ -152,7 +169,7 @@ input[type="submit"]:hover {
   bottom: 15px;
   left: 25px;
   background-color: #4aaaa5;
-  color: white;
+  color: whi;
   padding: 5px;
 }
 
